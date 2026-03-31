@@ -8,7 +8,7 @@ import Settingspage from './pages/settingspage'
 import Statuspage from './pages/statuspage'
 
 function App(){
-    return(<BrowserRouter>
+return(<BrowserRouter basename="/whatsapp-copy/">
     <Routes>
         <Route path="/" element={<Authpage />}/>
         <Route path="/calls" element={<Callspage />}/>
