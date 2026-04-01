@@ -1,14 +1,12 @@
-# Fix GitHub Pages Deployment (White Page / 404)
+## GitHub Pages Deployment Fix TODO
 
-**Repo:** https://copyninja05.github.io/whatsapp-copy/  
-**Base:** /whatsapp-copy/
+### Pending:
+- [ ] Step 3: Commit changes `git add . && git commit -m "fix: relative src in index.html for gh-pages" && git push`
+- [ ] Step 4: Deploy `npm run deploy`
+- [ ] Step 5: Verify https://copyninja05.github.io/whatsapp-copy/ (wait 2min, Network tab shows /whatsapp-copy/assets/... no 404s)
 
-## Steps:
-- [✅] 1. Update `vite.config.js`: Add `base: '/whatsapp-copy/'`
-- [✅] 2. Update `package.json`: Add `homepage`, gh-pages dep, deploy scripts
-- [✅] 3. Update `src/app.jsx`: Add `basename=\"/whatsapp-copy/\"` to BrowserRouter
-- [✅] 4. Update `index.html`: Fix script src to `%PUBLIC_URL%/src/main.jsx`
-- [✅] 5. `npm install`
-- [✅] 6. Test: `npm run build` + check dist/
-- [ ] 7. Deploy: `npm run deploy` + push gh-pages branch (retry after fixing index.html script src)
-- [ ] 8. Verify live site
+### Done:
+✅ Step 1: index.html fixed (src="./src/main.jsx")
+✅ Step 2: Local build verified - dist/index.html has `/whatsapp-copy/assets/index-[hash].js` (bundled, correct paths)
+
+
