@@ -14,6 +14,7 @@ function ChatsPage() {
         <div>
           <i className="bi bi-camera-video fs-5 me-3"></i>
           <i className="bi bi-pencil-square fs-5"></i>
+          
         </div>
       </div>
 
